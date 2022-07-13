@@ -1,6 +1,6 @@
 package com.gmail.natalliagavrilova.event.service;
 
-import com.gmail.natalliagavrilova.event.dao.api.IEventDao;
+import com.gmail.natalliagavrilova.event.dao.api.IFilmDao;
 import com.gmail.natalliagavrilova.event.dao.entity.Film;
 import com.gmail.natalliagavrilova.event.dto.film.FilmCreate;
 import com.gmail.natalliagavrilova.event.dto.film.FilmRead;
@@ -18,9 +18,9 @@ import java.util.UUID;
 @Service
 public class FilmService implements IFilmService {
 
-    private final IEventDao eventDao;
+    private final IFilmDao eventDao;
 
-    public FilmService(IEventDao eventDao) {
+    public FilmService(IFilmDao eventDao) {
         this.eventDao = eventDao;
     }
 
